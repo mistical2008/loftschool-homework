@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 17em;
+  text-align: center;
+}
+
+.wrapper {
+  background-color: #fafdfa;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4uc2FzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLFVBQVM7RUFDVCxXQUFVLEVBQUk7O0FBRWxCO0VBQ0ksZ0JBQWU7RUFDZixtQkFBa0IsRUFBSTs7QUFFMUI7RUFDSSwwQkFBeUIsRUFBSSIsImZpbGUiOiJtYWluLmNzcyIsInNvdXJjZXNDb250ZW50IjpbImJvZHkge1xuICAgIG1hcmdpbjogMDtcbiAgICBwYWRkaW5nOiAwOyB9XG5cbmgxIHtcbiAgICBmb250LXNpemU6IDE3ZW07XG4gICAgdGV4dC1hbGlnbjogY2VudGVyOyB9XG5cbi53cmFwcGVyIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmFmZGZhOyB9XG4iXX0= */
