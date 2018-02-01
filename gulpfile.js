@@ -18,8 +18,8 @@ global.$ = {
         app: require('./gulp/paths/app.js')
         },
         sprite: {
-            srcPng: "./app/img/icons_png/",
-            srcSvg: "./app/img/icons_svg/"
+            srcPng: "./app/img/icons_png",
+            srcSvg: "./app/img/icons_svg"
         }
 };
 
