@@ -1,0 +1,54 @@
+.hero
+    height: 650px
+    overflow: hidden
+    position: relative
+
+.hero__title
+    position: absolute
+    +centered
+    min-width: 70%
+
+.hero__title-header-bg
+    display: inline-block
+    width: 100%
+
+.hero__title-user-block
+    +centered
+    text-align: center
+    min-width: 450px
+
+
+.title-user-block__img
+    display: inline-block
+    width: 147px
+    height: 147px
+    border-radius: 50%
+    overflow: hidden
+
+.title-user-block__img-avatar
+    text-align: center
+    display: block
+    min-width: 100%
+
+.title-user-block__heading
+    font-size: 36px
+    color: #fff
+    line-height: 1
+    margin: 20px 0 10px
+
+.title-user-block__descr
+    color: #fff
+    font-weight: 100
+
+.hero__arrow-down
+    +centered(x)
+    bottom: 40px
+    width: 50px
+
+.hero__arrow_down-icon
+    display: inline-block
+    transition: ease-in-out .3s
+    &:hover
+        opacity: 0.5
+        transition: ease-in-out .3s
+        transform: scale(1.2)
