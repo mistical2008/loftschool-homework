@@ -38,21 +38,26 @@ mixin footer
 //- 	script(src='js/main.js')
 //- ---- end scripts -----//
 
+//- ---- title-with-bg-image -----//
+//- mixin title (title, url, additionClass)
+//-   .title(style=`background-image: url('img/decor/${url}')` class=additionClass)= title
+//- ----end title-with-bg-image -----//
+
 //- ---- menu-list -----//
-mixin menu(menuArray)
-	ul(class=`${menuArray.gl_class}_list ${menuArray.gl_mod}`)
-		each item in menuArray.items
-			- url = item.url || '#'
-			if item.active
-				li(class= `${menuArray.gl_class}_item ${menuArray.gl_mod} active_mod`)
-					a(href= url class= `${menuArray.gl_class}_link ${menuArray.gl_mod}`)= item.title
-			else
-				li(class= `${menuArray.gl_class}_item ${menuArray.gl_mod}`)
-					a(href= url class= `${menuArray.gl_class}_link ${menuArray.gl_mod}`)= item.title
+//- mixin menu(menuArray)
+//- 	ul(class=`${menuArray.gl_class}_list ${menuArray.gl_mod}`)
+//- 		each item in menuArray.items
+//- 			- url = item.url || '#'
+//- 			if item.active
+//- 				li(class= `${menuArray.gl_class}_item ${menuArray.gl_mod} active_mod`)
+//- 					a(href= url class= `${menuArray.gl_class}_link ${menuArray.gl_mod}`)= item.title
+//- 			else
+//- 				li(class= `${menuArray.gl_class}_item ${menuArray.gl_mod}`)
+//- 					a(href= url class= `${menuArray.gl_class}_link ${menuArray.gl_mod}`)= item.title
 
 //- ---- socials-list -----//
-mixin social(items, mod)
-	ul.social_list(class= mod)
-		each item in items
-			li.social_item(class= mod)
-				a.social_link(href='#' class=`${item}_mod ${mod}`)= item
+//- mixin social(items, mod)
+//- 	ul.social_list(class= mod)
+//- 		each item in items
+//- 			li.social_item(class= mod)
+//- 				a.social_link(href='#' class=`${item}_mod ${mod}`)= item
