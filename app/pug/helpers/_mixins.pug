@@ -1,0 +1,58 @@
+//- ---- svg-icon mixin -----//
+mixin icon(name,mod)
+	- mod = mod || ''
+	svg(class="icon icon-" + name + ' ' + mod)
+		use(xlink:href="img/sprite.svg#" + name)
+//- ---- end svg-icon mixin -----//
+
+//- ---- color-svg-icon mixin -----//
+mixin icon-color(name,mod)
+	- mod = mod || ''
+	svg(class="icon icon-" + name + ' ' + mod)
+		use(xlink:href="img/sprite-color.svg#" + name)
+//- ---- color-end svg-icon mixin -----//
+
+//- ---- header -----//
+mixin header
+	header.header
+//- ---- end header -----//
+
+//- ---- footer -----//
+mixin footer
+	footer.footer
+//- ---- end footer -----//
+
+//- ---- scripts -----//
+//- mixin scripts
+//- 	if jQuery
+//- 		|<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+//- 		|<script>window.jQuery || document.write('<script src="js/jquery-2.2.4.min.js"><\/script>')</script>
+//- 	if jQueryUI
+//- 		|<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+//- 		|<script>window.jQuery.ui || document.write('<script src="js/jquery-ui.min.js"><\/script>')</script>
+//- 	+script_cdn([
+//- 	{link:'//cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'},
+//- 	{link:'//cdn.glivera.com/dev_functions.js'}
+//- 	])
+//- 	script(src="js/all.js")
+//- 	script(src='js/main.js')
+//- ---- end scripts -----//
+
+//- ---- menu-list -----//
+mixin menu(menuArray)
+	ul(class=`${menuArray.gl_class}_list ${menuArray.gl_mod}`)
+		each item in menuArray.items
+			- url = item.url || '#'
+			if item.active
+				li(class= `${menuArray.gl_class}_item ${menuArray.gl_mod} active_mod`)
+					a(href= url class= `${menuArray.gl_class}_link ${menuArray.gl_mod}`)= item.title
+			else
+				li(class= `${menuArray.gl_class}_item ${menuArray.gl_mod}`)
+					a(href= url class= `${menuArray.gl_class}_link ${menuArray.gl_mod}`)= item.title
+
+//- ---- socials-list -----//
+mixin social(items, mod)
+	ul.social_list(class= mod)
+		each item in items
+			li.social_item(class= mod)
+				a.social_link(href='#' class=`${item}_mod ${mod}`)= item
