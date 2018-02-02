@@ -3,7 +3,6 @@
 module.exports = function() {
   $.gulp.task('sass', function() {
     return $.gulp.src($.path.src + '/sass/**/main.sass')
-      .pipe($.gp.sassGlob())
       .pipe($.gp.plumber(
         {
           errorHandler: $.gp.notify.onError({

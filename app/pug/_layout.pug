@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+include helpers/_mixins
+
+- var array = '';
+block vars
+
+doctype
 html(lang="ru")
     head
         meta(charset="UTF-8")
@@ -7,6 +12,11 @@ html(lang="ru")
         link(rel="stylesheet" href="./css/main.css")
         title
             block title
-    body
-        .wrapper
-            block content
+    body.body_class
+        +header
+        .wrapper.layout_mod
+            .base.layout_mod
+                block content
+            +footer
+        //- +scripts
+        block popup
