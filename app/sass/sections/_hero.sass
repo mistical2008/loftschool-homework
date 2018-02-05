@@ -11,11 +11,12 @@
 .hero__title-header-bg
     display: inline-block
     width: 100%
+     text-align: center
 
 .hero__title-user-block
     +centered
     text-align: center
-    min-width: 450px
+    // min-width: 450px
 
 
 .title-user-block__img
@@ -26,8 +27,8 @@
     overflow: hidden
 
 .title-user-block__img-avatar
-    text-align: center
-    display: block
+    // text-align: center
+    // display: block
     min-width: 100%
 
 .title-user-block__heading
@@ -35,20 +36,24 @@
     color: #fff
     line-height: 1
     margin: 20px 0 10px
+    min-width: 300px
 
 .title-user-block__descr
     color: #fff
     font-weight: 100
+    min-width: 300px
 
-.hero__arrow-down
+.icon-arrow_down
     +centered(x)
     bottom: 40px
     width: 50px
 
-.hero__arrow_down-icon
-    display: inline-block
-    transition: ease-in-out .3s
+.arrow_down--white
+    fill: #ffffff
+    transition: ease-in-out .25s
+    font-size: 1.05rem
+    opacity: 0.6
     &:hover
-        opacity: 0.5
+        font-size: 1.3rem
+        opacity: 1
         transition: ease-in-out .3s
-        transform: scale(1.2)
