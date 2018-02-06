@@ -23,8 +23,8 @@ mixin footer
 //- ---- end footer -----//
 
 //- ---- title-with-bg-image -----//
-mixin title(title, url, additionClass)
-	.title(style="background-image: url('img/decor/" + url + "')" class=additionClass)=title
+mixin title(title, url, additionClass, htag)
+	#{htag}.title(style="background-image: url('img/decor/" + url + "')" class=additionClass)=title
 //- ----end title-with-bg-image -----//
 //- ---- scripts -----//
 //- mixin scripts
