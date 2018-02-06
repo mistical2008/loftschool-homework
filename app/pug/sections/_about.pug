@@ -1,14 +1,24 @@
 section.about
-    .about-left.about-info
+    .about-info.about-left
         svg(viewbox="0 0 1000 100"
-            preserveAspectRation="none"
-            class="about-left__poligon about-left__poligon--white")
-            poligon(points="0,0 0,100 1000,100")
-        +title("Обо мне", "about-header.png", "about-left__title")
-        img(src="img/content/user.jpg" alt="").about-left__avatar
+            preserveAspectRatio="none"
+            class="about-info__poligon about-info__poligon--white")
+            polygon(points="0,0 0,100 1000,100")
+        +title("Обо мне", "about-header.png", "about-left-info__title", "h2")
+        .about-left-info
+            img(src="img/content/about.jpg" alt="").about-left-info__avatar
+            h4.about-left-info__subtitle Обо мне
+            .about-left-info__descr
+                p Здравствуйте! Я Web-дизайнер и фронтэнд-разработчик. Проще-говоря делаю визуальную часть вплоть до анимации интерфейса. Мне нравится делать современные, интересные и удобные для пользователя проекты.
+                p Этот сайт сделан в рамках обучения на проекте LoftSchool. Пока на нем довольно мало информации, но в скором времени я её дополню.
+                p У меня есть один небольшой недостаток — я перфекционист, но, возможно для вас это окажется огромным плюсом.
 
-    .about-right.about-info
+    .about-info.about-right
         svg(viewbox="0 0 1000 100"
-            preserveAspectRation="none"
-            class="about-left__poligon about-left__poligon--white")
-            poligon(points="1000,100 0,100 0,0")
+            preserveAspectRatio="none"
+            class="about-info__poligon about-info__poligon--beige")
+            polygon(points="0,100 1000,100 1000,0")
+        .about-right-info
+            h4.about-right-info__subtitle Чем я могу быть вам полезен?
+            p Больше всего меня привлекает работа с анимацией, но также я изучаю javascript и node.js, поэтому могу решать несложные задачи логики браузера. Но давайте по порядку.
+        .about-right-info__data
