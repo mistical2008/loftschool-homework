@@ -7,6 +7,7 @@ global.$ = {
     gp: require('gulp-load-plugins')(),
     buffer: require('vinyl-buffer'),
     merge: require('merge-stream'),
+    fs: require('fs'),
     package: require('./package.json'),
     config: require('./gulp/config'),
         path: {

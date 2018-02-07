@@ -8,7 +8,7 @@ section.about
         .about-left-info
             img(src="img/content/about.jpg" alt="").about-left-info__avatar
             .about-info-subtitle__wrapper
-                h4.about-left-info__subtitle.about__subtitle Кто я?
+                h3.about-left-info__subtitle.about__subtitle Кто я?
             .about-left-info__descr.about-info__descr
                 p Здравствуйте! Я Web-дизайнер и фронтэнд-разработчик. Проще-говоря делаю визуальную часть вплоть до анимации интерфейса. Мне нравится делать современные, интересные и удобные для пользователя проекты.
                 p Этот сайт сделан в рамках обучения на проекте LoftSchool. Пока на нем довольно мало информации, но в скором времени я её дополню.
@@ -21,7 +21,37 @@ section.about
             polygon(points="0,100 1000,100 1000,0")
         .about-right-info
             .about-info-subtitle__wrapper
-                h4.about-right-info__subtitle.about__subtitle Чем я могу быть вам полезен?
+                h3.about-right-info__subtitle.about__subtitle Чем я могу быть вам полезен?
             .about-right-info__descr.about-info__descr
                 p Больше всего меня привлекает работа с анимацией, но также я изучаю javascript и node.js, поэтому могу решать несложные задачи логики браузера. Но давайте по порядку.
         .about-right-info__data
+            ul.about-right-info__data-list
+                each group in skills
+                    each skillsArray, skillName in group
+                        li.data-list__item
+                            .data-list-section
+                                .data-list-section__title= skillName
+                                ul.data-list-section__list
+                                    each skillTitle in skillsArray
+                                        li.data-list-section__item
+                                            .data-list
+                                                svg(viewbox="0 0 100 100"
+                                                preserveAspectRatio="none").data-list__circle
+                                                    circle(cx="50" cy="50" r="40").data-list__circle--under
+                                                    circle(cx="50" cy="50" r="40").data-list__circle--above
+                                                .data-list__name= skillTitle
+
+
+
+
+            //-  each skill in ['Frontend']
+                //- li.skills-group__item
+                //-     .skills-group__title= skill
+                //-     ul.skills-list
+                //-         - for (var j = 0; j < 4; j++)
+                //-             li.skills-list__item
+                //-                 .skill
+                //-                     svg(viewbox="0 0 100 100" preserveAspectRatio="none").skill__circle
+                //-                         circle(cx="50" cy="50" r="40").skills__circle-under
+                //-                         circle(cx="50" cy="50" r="40").skills__circle-above
+                //-                     .skill__title HTML5
