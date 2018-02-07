@@ -5,7 +5,7 @@
     position: relative
     float: left
     width: 50%
-    min-height: 1000px
+    min-height: 1500px
 
 .about-left
     background: $white
@@ -21,7 +21,7 @@
     position: absolute
     bottom: 100%
     width: 100%
-    height: 150px
+    height: 160px
 
 .about-info__poligon--white
     fill: $white
@@ -30,10 +30,10 @@
     fill: $beige
 
 .about-left-info
-    max-width: 450px
+    max-width: 445px
 
 .about-left-info__title
-    color: $main-font-color
+    color: $h2-color
     font-size: 63px
     @include bernier()
     padding: 45px 80px
@@ -66,6 +66,7 @@
 
 .about-info-subtitle__wrapper
     text-align: center
+    margin: 35px 30px 15px
 
 
 .about__subtitle
@@ -73,7 +74,7 @@
     // top: 0.71em
     position: relative
     color: $main-font-color
-    font-size: 36px
+    font-size: 35px
     @include bernier()
     text-align: center
     margin: 17px 0
@@ -96,11 +97,10 @@
         right: 2%
 
 .about-info__descr
-    margin-bottom: 60px
+    margin-bottom: 47px
 
 .about-info__descr > p
     color: $main-font-color
-    font-size: 16px
 
 .about-left-info__descr > p+p
     margin-top: 15px
@@ -111,4 +111,41 @@
 .about-right-info__subtitle
     margin-top: 30px
     max-width: 400px
-    padding: 35px 30px 0
+
+.about-right-info__data
+    display: block
+    padding: 0 5%
+
+.data-list-section__title
+    font-size: 28px
+    font-weight: 500
+    color: $main-font-color
+
+.data-list-section__item
+    display: inline-block
+
+.data-list-section__list > li
+    margin-top: 10px
+    margin-right: 35px
+    margin-bottom: 25px
+
+
+.data-list__circle
+    width: 120px
+    fill: none
+    stroke-width: 17px
+
+.data-list__circle--under
+    stroke: #dfdcd5
+
+.data-list__circle--above
+    stroke: $accent
+    stroke-dasharray: 377
+    stroke-dashoffset: 200
+.data-list
+    position: relative
+
+.data-list__name
+    font-size: 14px
+    color: $accent
+    +centered()

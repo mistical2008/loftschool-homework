@@ -10,7 +10,9 @@ module.exports = function() {
           })
         }
       ))
-      .pipe($.gp.pug({ pretty: true }))
+      .pipe($.gp.pug({
+          pretty: true,
+          locals : JSON.parse($.fs.readFileSync($.path.src + '/content.json', 'utf8')), }))
       .pipe($.gp.size({title: "Pug"}))
       .pipe($.gulp.dest($.path.src))
       .pipe($.browserSync.stream());
