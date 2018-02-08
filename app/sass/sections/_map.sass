@@ -1,18 +1,57 @@
 .map
-    display: flex
-    justify-content: center
-    align-items: center
-    height: 1076px
+    position: relative
+    // height: auto
+    overflow: hidden
     // background-image: url('../img/content/map.jpg')
     // background-size: cover
     // background-position: center center
     // background-repeat: no-repeat
 
+.map-bg
+    width: 100%
+
 .map-contacts
     width: 381px
     height: 291px
-    // +centered()
-    // z-index: 10
+    +centered
+    z-index: 10
+    background: #ffffff
+    opacity: .85
+    padding: 30px 40px 0
+    border-radius: 5px
+
+.map-contacts__heading-wrapper
+    text-align: center
+    margin-bottom: 33px
 
 .map-contacts__subtitle
     color: $h2-color
+    margin-bottom: 0
+
+.map-contacts__list > *+*
+    margin-top: 19px
+
+.map-contacts-string__icon
+    color: $accent
+    font-size: 25px
+    vertical-align: middle
+
+.map-contacts-string__text
+    display: inline-block
+    color: $main-font-color
+    vertical-align: middle
+
+.icon-skype
+    margin-right: 5px
+
+.icon-envelope
+    font-size: 18px
+    margin-right: 7px
+
+.icon-phone
+    font-size: 20px
+    margin-right: 10px
+
+.icon-map_marker
+    font-size: 26px
+    margin-right: 10px
