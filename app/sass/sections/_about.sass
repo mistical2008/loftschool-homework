@@ -1,11 +1,13 @@
 .about
     @extend %clearfix
+    // position: relative
+    display: flex
 
 .about-info
     position: relative
     float: left
     width: 50%
-    min-height: 1500px
+    // min-height: 1500px
 
 .about-left
     background: $white
@@ -32,18 +34,18 @@
 .about-left-info
     max-width: 445px
 
-.about-left-info__title
+.title
     color: $h2-color
     font-size: 63px
     @include bernier()
-    padding: 45px 80px
+    margin: -3px 0 40px
+    padding: 0 80px
     display: inline-block
     position: relative
     background-size: contain
     background-position: center center
     background-repeat: no-repeat
     text-align: center
-
 
     &:before, &:after
         content: ''
@@ -61,12 +63,13 @@
         right: 10%
 
 
-.about-info__avatar
-    display: inline-block
+.about-left-info__avatar
+    // display: inline-block
+    margin-bottom: 11px
 
 .about-info-subtitle__wrapper
     text-align: center
-    margin: 35px 30px 15px
+    margin: 15px 30px 15px
 
 
 .about__subtitle
@@ -77,8 +80,8 @@
     font-size: 35px
     @include bernier()
     text-align: center
-    margin: 17px 0
-    padding: 0 60px
+    margin: 0 0 18px
+    padding: 0 55px
     line-height: 1.1
 
     &:before, &:after
@@ -96,8 +99,19 @@
     &:after
         right: 2%
 
+.about-right-info__subtitle
+    max-width: 350px
+
+    &:before
+        left: 6%
+        top: 20%
+
+    &:after
+        right: 6%
+        top: 20%
+
 .about-info__descr
-    margin-bottom: 47px
+    margin-bottom: 25px
 
 .about-info__descr > p
     color: $main-font-color
@@ -105,16 +119,11 @@
 .about-left-info__descr > p+p
     margin-top: 15px
 
-.about-right-info
-    padding: 0 5%
-
-.about-right-info__subtitle
-    margin-top: 30px
-    max-width: 400px
+.about-right-info, .about-right-info__data
+    padding: 0 6%
 
 .about-right-info__data
     display: block
-    padding: 0 5%
 
 .data-list-section__title
     font-size: 28px
