@@ -1,6 +1,8 @@
 {
   "name": "loftschool-builder",
   "devDependencies": {
+    "backstopjs": "^3.0.39",
+    "breakpoint-sass": "^2.7.1",
     "browser-sync": "~2.18.7",
     "del": "~3.0.0",
     "gulp": "github:gulpjs/gulp#4.0",
@@ -8,6 +10,7 @@
     "gulp-cheerio": "~0.6.2",
     "gulp-concat": "~2.6.1",
     "gulp-concat-css": "~2.3.0",
+    "gulp-css-unit": "^1.2.2",
     "gulp-csso": "^3.0.0",
     "gulp-eslint": "~3.0.1",
     "gulp-group-css-media-queries": "^1.2.0",
@@ -29,6 +32,8 @@
     "gulp-util": "^3.0.8",
     "gulp.spritesmith": "^6.9.0",
     "merge-stream": "^1.0.1",
+    "singularitygs": "^1.8.0",
+    "slimerjs": "^0.10.3",
     "vinyl-buffer": "^1.0.1",
     "vinyl-ftp": "^0.6.1"
   },
