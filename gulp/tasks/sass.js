@@ -13,6 +13,10 @@ module.exports = function() {
       ))
       .pipe($.gp.sourcemaps.init())
       .pipe($.gp.sass())
+      .pipe($.gp.cssUnit({
+        type: "px-to-rem",
+        rootSize: 16
+      }))
       .pipe($.gp.autoprefixer({ browsers: $.config.autoprefixerConfig }))
       .pipe($.gp.groupCssMediaQueries())
       .pipe($.gp.sourcemaps.write())
