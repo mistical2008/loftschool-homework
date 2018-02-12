@@ -3,7 +3,6 @@ dependencies:
   normalize.css: 7.0.0
 devDependencies:
   backstopjs: 3.0.39
-  breakpoint-sass: 2.7.1
   browser-sync: 2.18.13
   del: 3.0.0
   gulp: github.com/gulpjs/gulp/71c094a51c7972d26f557899ddecab0210ef3776
@@ -35,6 +34,7 @@ devDependencies:
   merge-stream: 1.0.1
   singularitygs: 1.8.0
   slimerjs: 0.10.3
+  smart-grid: 1.1.0
   vinyl-buffer: 1.0.1
   vinyl-ftp: 0.6.1
 packages:
@@ -851,10 +851,6 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-P4O8UQRdGiMLWSizsApmXVQDBS6KCt7dSexgLKBmH5Hr1CZq7vsnscFh8oR1sP1ab1Zj0uCHCEzZeV6SfUf3rA==
-  /breakpoint-sass/2.7.1:
-    dev: true
-    resolution:
-      integrity: sha1-jvbEdE3MJbqD2Wm2yaF+XaopmAo=
   /browser-sync-client/2.5.1:
     dependencies:
       etag: 1.8.1
@@ -8107,6 +8103,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-v9lesGNOgaI7I4M6Qi9ovjLP/sg=
+  /smart-grid/1.1.0:
+    dev: true
+    resolution:
+      integrity: sha1-rx5aYYYlXGGfMnzjOE7b3axa82s=
   /snapdragon-node/2.1.1:
     dependencies:
       define-property: 1.0.0
@@ -9839,7 +9839,6 @@ shrinkwrapMinorVersion: 4
 shrinkwrapVersion: 3
 specifiers:
   backstopjs: ^3.0.39
-  breakpoint-sass: ^2.7.1
   browser-sync: ~2.18.7
   del: ~3.0.0
   gulp: 'github:gulpjs/gulp#4.0'
@@ -9873,5 +9872,6 @@ specifiers:
   normalize.css: ~7.0.0
   singularitygs: ^1.8.0
   slimerjs: ^0.10.3
+  smart-grid: ^1.1.0
   vinyl-buffer: ^1.0.1
   vinyl-ftp: ^0.6.1

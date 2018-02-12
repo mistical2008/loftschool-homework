@@ -2,7 +2,6 @@
   "name": "loftschool-builder",
   "devDependencies": {
     "backstopjs": "^3.0.39",
-    "breakpoint-sass": "^2.7.1",
     "browser-sync": "~2.18.7",
     "del": "~3.0.0",
     "gulp": "github:gulpjs/gulp#4.0",
@@ -34,6 +33,7 @@
     "merge-stream": "^1.0.1",
     "singularitygs": "^1.8.0",
     "slimerjs": "^0.10.3",
+    "smart-grid": "^1.1.0",
     "vinyl-buffer": "^1.0.1",
     "vinyl-ftp": "^0.6.1"
   },
