@@ -1,5 +1,5 @@
 {
-  "id": "backstop_default",
+  "id": "homework",
   "viewports": [
     {
       "label": "phone",
@@ -8,17 +8,27 @@
     },
     {
       "label": "tablet",
-      "width": 1024,
-      "height": 768
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "label": "desktop",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "label": "desktop-hd",
+      "width": 1800,
+      "height": 900
     }
   ],
   "onBeforeScript": "chromy/onBefore.js",
   "onReadyScript": "chromy/onReady.js",
   "scenarios": [
     {
-      "label": "BackstopJS Homepage",
+      "label": "Homepage",
       "cookiePath": "backstop_data/engine_scripts/cookies.json",
-      "url": "https://garris.github.io/BackstopJS/",
+      "url": "http://localhost:3000/",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
@@ -28,7 +38,15 @@
       "hoverSelector": "",
       "clickSelector": "",
       "postInteractionWait": "",
-      "selectors": [],
+      "selectors": [
+        "document",
+        "viewport",
+        ".header",
+        ".hero",
+        ".about-left",
+        ".about-right",
+        ".map-contacts"
+      ],
       "selectorExpansion": true,
       "misMatchThreshold" : 0.1,
       "requireSameDimensions": true
