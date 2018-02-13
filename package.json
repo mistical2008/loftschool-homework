@@ -5,6 +5,7 @@
     "approve": "backstop approve",
     "test": "backstop test",
     "init": "backstop init",
+    "reference": "backstop reference",
     "backstop": "backstop"
   },
   "devDependencies": {
