@@ -14,5 +14,6 @@ module.exports = [
   './gulp/tasks/sprite.img.js',
   './gulp/tasks/copy.fonts.js',
   './gulp/tasks/serve.js',
+  './gulp/tasks/grid.js',
   './gulp/tasks/watch.js'
 ];

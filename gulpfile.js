@@ -8,6 +8,7 @@ global.$ = {
     buffer: require('vinyl-buffer'),
     merge: require('merge-stream'),
     fs: require('fs'),
+    grid: require('smart-grid'),
     package: require('./package.json'),
     config: require('./gulp/config'),
         path: {
