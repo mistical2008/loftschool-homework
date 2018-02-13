@@ -4,3 +4,4 @@ node_modules/
 examples/
 Задачи
 backstop_data/
+app/sass/helpers/smart-grid.sass
