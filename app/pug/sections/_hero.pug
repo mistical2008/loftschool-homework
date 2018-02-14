@@ -4,14 +4,7 @@ section.hero
 
     .hero__title.hero__item
         img(src="img/decor/portfolio-header.png").hero__title-header-bg
-        .hero__title-user-block
-            .title-user-block__img
-                .title-user-block__img-avatar
-                    img(src="img/content/user.jpg" alt="")
-            h1.title-user-block__heading
-                |Здравствуйте. Меня зовут <br> Евгений Талько.
-            .title-user-block__descr
-                |Личный сайт вэб-дизайнера и разработчика.
+        include _user-title
 
     a.hero__arrow-down(href="#")
         +icon("arrow_down", "arrow_down--white")
