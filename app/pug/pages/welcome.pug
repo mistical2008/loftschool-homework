@@ -1,6 +1,7 @@
 extends ../_layout
 
 block vars
+    - var body_class="welcome-body"
 
 block title
     |Evgeniy Talko — Добро пожаловать
@@ -10,3 +11,5 @@ block content
         include ../sections/_welcome-header
 
         include ../sections/_welcome-user-title
+
+        include ../sections/_welcome-footer

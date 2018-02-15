@@ -1,8 +1,34 @@
-.hero__title-user-block
+main.welcome-main
+    .welcome-user-title__wrapper
+        .title-user-block
             .title-user-block__img
                 .title-user-block__img-avatar
                     img(src="img/content/user.jpg" alt="")
-            h1.title-user-block__heading.title-user-block__item--dark
-                |Здравствуйте. Меня зовут <br> Евгений Талько.
-            .title-user-block__descr.title-user-block__item--dark
+            .title-user-block__h1-wrapper.title-user-block__h1-wrapper--welcome
+                h1.title-user-block__heading.title-user-block__heading--dark
+                    |Евгений Талько
+            .title-user-block__descr.title-user-block__descr--dark
                 |Личный сайт вэб-дизайнера и разработчика.
+
+            ul.title-user-block__socials.welcome-user-title__socials
+                li.social-icons__item.welcome-user-title__socials-item
+                    a.social-icons__link
+                        +icon("vk","top-nav__items--white")
+                li.social-icons__item.welcome-user-title__socials-item
+                    a.social-icons__link
+                        +icon("github","top-nav__items--white")
+                li.social-icons__item.welcome-user-title__socials-item
+                    a.social-icons__link
+                        +icon("in","top-nav__items--white")
+
+        nav.title-user-block__nav
+            ul.title-user-block__nav-links
+                li.nav-links__item
+                    a.nav-links__item-link(href="./works.html")
+                        |Мои работы
+                li.nav-links__item
+                    a.nav-links__item-link(href="./about.html")
+                        |Обо мне
+                li.nav-links__item
+                    a.nav-links__item-link(href="./blog.html")
+                        |Блог
