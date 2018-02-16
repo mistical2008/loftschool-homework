@@ -1,0 +1,16 @@
+section.works
+    .works__title-block
+        .works__poligon-wrapper
+            .works__poligon-left
+                svg(height="160" viewbox="0 0 1000 100"
+                    preserveAspectRatio="none"
+                    class="about-info__poligon about-info__poligon--light-beige")
+                    polygon(points="0,0 0,100 1000,100")
+            .works__poligon-right
+                svg(viewbox="0 0 1000 100"
+                    preserveAspectRatio="none"
+                    class="about-info__poligon about-info__poligon--light-beige")
+                    polygon(points="0,100 1000,100 1000,0")
+
+        .title-block__title-wrapper
+            +title('Мои работы', 'works-header.png', 'about-left-info__title works__title', 'h2')
